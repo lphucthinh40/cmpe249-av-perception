@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+    <!-- Add Car Model for visualization display-->
+    <!-- <include file="$(find av_perception)/launch/rviz_car_model.launch" /> -->
+
+    <!-- Launch rviz for visualization -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find av_perception)/rviz/perception_default.rviz"/>
+
+    <!-- Launch Yolo Detector -->
+    <node pkg="av_perception" name="yolo_detector_node" type="yolo_detector" output="screen"> 
+    </node>
+
+    <!-- Launch PointPillar Detector -->
+    <node pkg="av_perception" name="pp_detector_node" type="pp_detector" output="screen"> 
+    </node>
+
+</launch>
