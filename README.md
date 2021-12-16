@@ -32,3 +32,4 @@ This package was tested on Geforce GTX 1060 4GB.
 
 ### Demo Result
 
+![image](/fig/demo.png)
